@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University of Madras - Results</title>
+    <style>
+        body {
+            background-color: #d0d8f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #b22222;
+        }
+
+        .headtext {
+            position: relative;
+            top: -23px;
+        }
+
+        .sub-header {
+            color: #0000ee;
+            font-size: 16px;
+        }
+
+        .box {
+            background-color: #d0d8f0;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #000;
+        }
+
+        button {
+            width: 45%;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        .credits {
+            position: relative;
+            bottom: -220px;
+            color: #80aaff;
+            font-size: 10px;
+            text-align: center;
+            opacity: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"><img src="images/madras.png" height="60px" width="50px"> <span class="headtext">University
+                of Madras</span></div>
+        <div class="sub-header">November 2024 - BCOM/BCOM(CA)/BCOM(A&F)/BCOM(BM)/BCOM(HONS.)/BBA/BSC(VISCOM)/MCA/MA/MCOM/MSC/MBA<br> All Semester Examination Results.</div>
+        <br>
+        <div class="box">
+            <label>Register Number</label>
+            <input type="text" id="regNumber" placeholder="Enter Register Number"><br>
+            <label>Date of Birth</label>
+            <input type="text" id="DOB" placeholder="DD/MM/YYYY">
+            <button onclick="getResult()">Get Result</button>
+            <button onclick="clearInput()">Clear</button>
+
+            <p class="credits">april fool, hahaha</p>
+        </div>
+    </div>
+    <script>
+        function getResult() {
+            var regNumber = document.getElementById("regNumber").value;
+            var DOB=document.getElementById("DOB").value;
+            if (regNumber === "634567838") {
+                window.location.href = "1ajith.html";
+            } 
+            
+            else {
+                alert("Invalid Register Number!");
+            }
+        }
+        function clearInput() {
+            document.getElementById("regNumber").value = "";
+            document.getElementById("DOB").value = "";
+        }
+        
+    </script>
+
+</body>
+
+</html>

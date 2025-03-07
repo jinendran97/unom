@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University of Madras - Results</title>
+    <style>
+        body {
+            background-color: #d0d8f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #b22222;
+        }
+
+        .headtext {
+            position: relative;
+            top: -23px;
+        }
+
+        .sub-header {
+            color: #0000ee;
+            font-size: 16px;
+        }
+
+        .box {
+            background-color: #d0d8f0;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #000;
+        }
+
+        button {
+            width: 45%;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        .credits {
+            position: relative;
+            bottom: -220px;
+            color: #80aaff;
+            font-size: 10px;
+            text-align: center;
+            opacity: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"><img src="images/madras.png" height="60px" width="50px"> <span class="headtext">University
+                of Madras</span></div>
+        <div class="sub-header">November 2024 - BSC/BCA/BA/BCOM(CS)/OT All Semester Examination Results.</div>
+        <br>
+        <div class="box">
+            <label>Register Number</label>
+            <input type="text" id="regNumber" placeholder="Enter Register Number"><br>
+            <label>Date of Birth</label>
+            <input type="text" id="DOB" placeholder="DD/MM/YYYY">
+            <button onclick="getResult()">Get Result</button>
+            <button onclick="clearInput()">Clear</button>
+
+            <p class="credits">april fool, hahaha</p>
+        </div>
+    </div>
+    <script>
+        function getResult() {
+            var regNumber = document.getElementById("regNumber").value;
+            var DOB=document.getElementById("DOB").value;
+            if (regNumber === "212300374") {
+                window.location.href = "1ajith.html";
+            } 
+            else if (regNumber === "212300375") {
+                window.location.href = "2balaji.html";            
+            }
+            else if (regNumber === "212300376") {
+                window.location.href = "3leo.html";            
+            }
+            else if (regNumber === "212300377") {
+                window.location.href = "4deva.html";            
+            }
+            else if (regNumber === "212300378") {
+                window.location.href = "5jai.html";            
+            }
+            else if (regNumber === "212300379") {
+                window.location.href = "6jinendran.html";            
+            }
+            else if (regNumber === "212300380") {
+                window.location.href = "7sanjay.html";            
+            }
+            else if (regNumber === "212300383") {
+                window.location.href = "9sudharshan.html";            
+            }
+            else if (regNumber === "212300384") {
+                window.location.href = "10surendar.html";            
+            }
+            else if (regNumber === "212300385") {
+                window.location.href = "11tharun.html";            
+            }
+            else if (regNumber === "212300386") {
+                window.location.href = "12yuvaraj.html";            
+            }
+            else if (regNumber === "212300387") {
+                window.location.href = "13divya.html";            
+            }
+            else if (regNumber === "212300388") {
+                window.location.href = "14kani.html";            
+            }
+            else if (regNumber === "212300390") {
+                window.location.href = "16nishanthi.html";            
+            }
+            else if (regNumber === "212300389") {
+                window.location.href = "15monisha.html";            
+            }
+            else if (regNumber === "212300392") {
+                window.location.href = "18sakthi.html";            
+            }
+            else if (regNumber === "212300393") {
+                window.location.href = "19sandhiya.html";            
+            }
+            else if (regNumber === "212300394") {
+                window.location.href = "20tamil.html";            
+            }
+            else if (regNumber === "212300395") {
+                window.location.href = "21nbalaji.html";            
+            }
+            else {
+                alert("Invalid Register Number!");
+            }
+        }
+        function clearInput() {
+            document.getElementById("regNumber").value = "";
+            document.getElementById("DOB").value = "";
+        }
+        
+    </script>
+
+</body>
+
+</html>
